@@ -5,7 +5,11 @@
 }
 
 body {
+  /* border: green solid 3px; For visual representation delete this */
   height: 100vh;
+  width: 100vw;
+  /* sets the body to the full screen size */
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -13,8 +17,13 @@ body {
 }
 
 .container {
+  width: 100%;
+  height: 100%;
+  /* border: solid red 2px; For visual representation delete this  */
+  /* Sets the container so it takes the full screen as well, and now the container stays in the middle as the screen shrinks */
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .form {
@@ -25,6 +34,9 @@ body {
   border-radius: 5%;
   box-shadow: 0px 0px 10px 5px rgba(200, 200, 200, 1);
   align-items: center;
+
+  overflow: hidden; 
+  /* Hides the text if the screen gets to small and prevents overflow */
 }
 
 .form h1 {
